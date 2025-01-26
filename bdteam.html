@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="img/cricket-logo-png-7553.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js
+">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Bangladesh National Cricket Team</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar- bg-success">
+          <div class="container-fluid">
+            <a style="font-size: 25px;color: white;font-weight: 700;" id="criclogo" class="navbar-brand" href="index.html">CricPoint</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div id=""  class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+              <ul id="" class="navbar-nav ml-auto me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Live Score</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Series
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="IndVsBan.html" target="">India tour of Bangladesh,2022</a></li>
+                    <li><a class="dropdown-item" href="#">New Zealand tour of Pakistan,2022</a></li>
+                    <li><a class="dropdown-item" href="#">England tour of South Africa,2023</a></li>
+                    <li><a class="dropdown-item" href="#">West Indies tour of South Africa,2023</a></li>
+                    <li><a class="dropdown-item" href="#">Sri Lanka tour New Zealand,2023</a></li>
+                    <li><a class="dropdown-item" href="#">Netherlands tour of South Africa,2023</a></li>
+                    <li><a class="dropdown-item" href="#">New Zealand tour of Pakistan,2023</a></li>
+                    <li><a class="dropdown-item" href="#">The Ashes,2023</a></li>
+                    <li><a class="dropdown-item" href="#">New Zealand tour of England,2023</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Archives</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Team
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="bdteam.html">Bangladesh</a></li>
+                    <li><a class="dropdown-item" href="#">India</a></li>
+                    <li><a class="dropdown-item" href="#">Srilanka</a></li>
+                    <li><a class="dropdown-item" href="#">Pakistan</a></li>
+                    <li><a class="dropdown-item" href="#">Australia</a></li>
+                    <li><a class="dropdown-item" href="#">Newzealand</a></li>
+                    <li><a class="dropdown-item" href="#">England</a></li>
+                    <li><a class="dropdown-item" href="#">South Africa</a></li>
+                    <li><a class="dropdown-item" href="#">Westindies</a></li>
+                    <li><a class="dropdown-item" href="#">Afganistan</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Ranking
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Icc men's t20 ranking </a></li>
+                    <li><a class="dropdown-item" href="#">Icc men's odi ranking </a></li>
+                    <li><a class="dropdown-item" href="#">Icc men's test ranking </a></li>
+    
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    More
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Icc world test championship</a></li>
+                    <li><a class="dropdown-item" href="#">Icc odi super league</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="login.html" tabindex="-1" aria-disabled="true">
+                    Login
+                  </a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section class="matches">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a style="color:white ;font-weight: 700;" class="navbar-brand" href="#">Matches</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-space-between" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Wi vs Afg-Live</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Ban vs Ind-Ban won</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Aus vs Sri-Aus won</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Eng vs Pak-Pak won</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Eng vs Pak-Pak won</a>
+                </li>
+                        
+                <li style="margin-left: 100px !important;" class="nav-item dropdown d-flex pl-5 ml-5">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    All
+                  </a>
+                  <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">All</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    
+      </section>
+
+      <section class="indVsbanSchedule">
+        <div class="">
+            <div class="indVsbanIntro">
+                <h2 style="font-weight: 600;">Bangladesh National Cricket Team</h2>
+               
+            </div>
+        </div>
+
+      </section>
+
+      <!------------------------------------------->
+
+      <section class=" mt-2">
+        <div class="indVsBan">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a style="color: red;" class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="IndVsBan.html"> Schedule</a>
+                    <div class="sced_barline"></div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> Results</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"> News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"> Videos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true"> Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">  Stats</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active " href="bdteam.html" tabindex="-1" aria-disabled="true"> Players</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+      </section>
+
+    
+    <section class="bdsquad mt-3 ml-4">
+        <div class="bdsquadBody pl-2">
+            <div class="row mt-2">
+                <div class="col-8">
+                    <div class="row">
+                        <h3>Batsman</h3>
+                        <div class="col-6">
+                            <div class="bdsquadInfo mt-3">
+                                <div class="bdsquadInfoBody mt-2">
+                                 <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c170899/tamim-iqbal.jpg" alt="">
+                                 <a style="margin-left:20px ;" class="" href="" onclick="changeTamim(this)">Tamim Iqbal</a>
+                                </div>
+                                <div class="bdsquadInfoBody mt-2">
+                                 <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244925/najmul-hossain-shanto.jpg" alt="">
+                                 <a style="margin-left:20px ;" class="" href=""onclick="changeText(this)">Najmul Hossain 
+                                 </a>
+                                </div>
+                                <h3 class="mt-3 ">All-rounder</h3>
+
+                                <div class="bdsquadInfoBody mt-4">
+                                  <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244928/shakib-al-hasan.jpg" alt=""onclick="shakib()">
+                                  <a style="margin-left:20px ;" class="" href="" >Shakib Al Hasan
+
+                                  </a>
+                                 </div>
+                                 <div class="bdsquadInfoBody mt-4">
+                                  <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244923/mosaddek-hossain.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Mosaddek Hossain
+
+
+                                  </a>
+                                 </div>
+                                 <h3 class="mt-3 ">Wicket-kepper</h3>
+                                 <div class="bdsquadInfoBody mt-4">
+                                  <img onclick="litton()" style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244922/litton-das.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Litton Das
+
+
+                                  </a>
+                                 </div>
+                                 <h3 class="mt-3 ">Bowler</h3>
+                                 <div class="bdsquadInfoBody mt-4">
+                                  <img onclick="ebadot()" style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244918/ebadot-hossain.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Ebadot Hossain
+
+
+
+
+                                  </a>
+                                 </div>
+                                 <div class="bdsquadInfoBody mt-4">
+                                  <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244924/mustafizur-rahman.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Mustafizur Rahman
+
+
+
+                                  </a>
+                                 </div>
+                                 <div class="bdsquadInfoBody mt-4">
+                                  <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244927/nasum-ahmed.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Nasum Ahmed
+
+
+
+                                  </a>
+                                 </div>
+
+         
+                             </div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="bdsquadInfo mt-3">
+                                <div class="bdsquadInfoBody mt-2">
+                                 <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244930/soumya-sarkar.jpg" alt="">
+                                 <a style="margin-left:20px ;" class="" href="" onmouseover="m(this)" onmouseout="o(this)" >Soumya Sarkar
+                                </a>
+                                </div>
+                                <div class="bdsquadInfoBody mt-2">
+                                 <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244929/yasir-ali.jpg" alt="">
+                                 <a style="margin-left:20px ;" class="" href="">Yasir Ali
+
+                                 </a>
+                                </div><br><br><br>
+                                <div class="bdsquadInfoBody   ">
+                                  <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244920/afif-hossain.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Afif Hossain
+
+ 
+                                  </a>
+                                 </div><br>
+                                 <div class="bdsquadInfoBody   ">
+                                  <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244919/mehidy-hasan-miraz.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Mehidy Hasan
+ 
+                                  </a>
+                                 </div><br><br><br>
+                                 <div class="bdsquadInfoBody   ">
+                                  <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244926/nurul-hasan.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Nurul Hasan
+
+ 
+                                  </a>
+                                 </div><br><br><br>
+
+                                 <div class="bdsquadInfoBody   ">
+                                  <img style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244932/taskin-ahmed.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Taskin Ahmed
+ 
+                                  </a>
+                                 </div><br>
+                                 <div class="bdsquadInfoBody mt-2">
+                                  <img onclick="setTimeout(hasan,2000)" style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244921/hasan-mahmud.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Hasan Mahmud
+ 
+                                  </a>
+                                 </div><br>
+                                 <div class="bdsquadInfoBody ">
+                                  <img onclick="shorif()" style="width: 100px;" src="https://www.cricbuzz.com/a/img/v1/75x75/i1/c244931/shoriful-islam.jpg" alt="">
+                                  <a style="margin-left:20px ;" class="" href="">Shoriful Islam
+
+ 
+                                  </a>
+                                 </div>
+                                 
+
+         
+                             </div>
+
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="col-4">
+                  <h4 style="color: green;" class="mt-2">Latest News</h4>
+                  <div class="bdteamlatestnews">
+                    <div class="bdteamlatestnewsBody">
+                      <img style="width: 200px;border-radius: 5px; margin-right: 10px;" src="https://www.cricbuzz.com/a/img/v1/100x77/i1/c245161/ireland-beat-west-indies-to-ma.jpg" alt="">
+                      <div>
+                        <a  style="font-size: 17px;text-decoration: none;color: black;" href="">Super 12's late entrants clash ahead of  challenges</a><br><br>
+                        <span class="">14m ago</span>
+                      </div>
+                    </div>
+
+                    <div class="bdteamlatestnewsBody mt-4">
+                      <img style="width: 200px;border-radius: 5px; margin-right: 10px;" src="https://www.cricbuzz.com/a/img/v1/100x77/i1/c245160/phillippe-got-his-side-off-to.jpg" alt="">
+                      <div>
+                        <a style="font-size: 17px;text-decoration: none;color: black;" href="">Josh Phillippe, Bancroft star in WA's thrilling win</a><br><br>
+                        <span class="">45m ago</span>
+                      </div>
+                    </div>
+
+                    <div class="bdteamlatestnewsBody mt-4">
+                      <img style="width: 200px;border-radius: 5px; margin-right: 10px;" src="https://www.cricbuzz.com/a/img/v1/100x77/i1/c245143/india-pakistan-mcg-and-9000.jpg" alt="">
+                      <div>
+                        <a style="font-size: 17px;text-decoration: none;color: black;" href="">A different gravy of intrigue menu for Ind-v-Pak</a><br><br>
+                        <span class="">1h ago</span>
+                      </div>
+                    </div>
+                    <div class="bdteamlatestnewsBody mt-4">
+                      <img style="width: 200px;border-radius: 5px; margin-right: 10px;" src="https://www.cricbuzz.com/a/img/v1/100x77/i1/c245165/australia-won-the-toss-and-ele.jpg" alt="">
+                      <div>
+                        <a style="font-size: 17px;text-decoration: none;color: black;" href=""> Australia vs New Zealand ICC T20 World Cup 2022</a><br><br>
+                        <span class="">2h ago</span>
+                      </div>
+                    </div>
+
+                    <div class="bdteamlatestnewsBody mt-4">
+                      <img style="width: 200px;border-radius: 5px; margin-right: 10px;" src="https://www.cricbuzz.com/a/img/v1/100x77/i1/c244943/t20-world-cup-match-9-sri-lan.jpg" alt="">
+                      <div>
+                        <a style="font-size: 17px;text-decoration: none;color: black;" href="">T20 World Cup Match 9: Sri Lanka vs Netherlands</a><br><br>
+                        <span class="">2h ago</span>
+                      </div>
+                    </div>
+
+                    <div class="bdteamlatestnewsBody mt-4">
+                      <img style="width: 200px;border-radius: 5px; margin-right: 10px;" src="https://www.cricbuzz.com/a/img/v1/100x77/i1/c245098/rauf-had-shared-a-house-with-m.jpg" alt="">
+                      <div>
+                        <a style="font-size: 17px;text-decoration: none;color: black;" href="">From Hobart to Pakistan with an Indian pit stop</a><br><br>
+                        <span class="">4h ago</span>
+                      </div>
+                    </div>
+
+                    
+
+
+                  </div>
+                  <div class="featured-videos-button mt-5">
+                    <button class="button">More Videos</button>
+                   </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <div class="footer_section mt-5">
+      <div class="footer_body ">
+        <div class="row">
+          <div class="col-3">
+            <a class="mt-5 ml-5" href="">CricPoint</a>
+  
+          </div>
+          <div class="col-3">
+            <div class="footer_body_mobile">
+              <h4 class="ml-2" style="color: white;">Mobile site & apps</h4>
+              <a href=""><i class="fa fa-codiepie"><span></span></i>&nbsp;cricPoint.com</a>
+              <a href=""><i class="fa fa-android"><span></span></i>&nbsp;Android</a>
+            </div>
+  
+          </div>
+          <div class="col-3">
+            <div class="footer_body_mobile">
+              <h4 class="" style="color: white;">Follow Us</h4>
+              <a href=""><i class="fa fa-twitter"></i>&nbsp;twitter</a>
+                <a href=""><i class="fa fa-facebook"></i>&nbsp;facebook</a>
+                <a href=""><i class="fa fa-youtube"></i>&nbsp;youtube</a>
+                <a href=""><i class="fa fa-whatsapp"></i>&nbsp;whatsapp</a>
+            </div>
+  
+          </div>
+          <div class="col-3">
+            <div class="footer_body_mobile">
+              <h4 class="" style="color: white;">Company</h4>
+              <a href="">Careers</a>
+              <a href="">Advertise</a>
+              <a href="">Privacy Policy</a>
+              <a href="">Terms of Use</a>
+              <a href="">CricPoint TV Ads</a>
+            </div>
+  
+          </div>
+          
+  
+        </div>
+       
+  
+      </div>
+      
+  
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src=""></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>

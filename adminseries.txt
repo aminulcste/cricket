@@ -1,0 +1,55 @@
+<?php
+include 'adminbar.php';
+
+// Fetch series from the database
+$sql = "SELECT * FROM series";  
+$result = mysqli_query($conn, $sql);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Series List</h1>
+        <div class="row">
+            <?php
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    ?>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-header bg-primary text-white">
+                                <?php echo $row['seriesname']; ?>
+                            </div>
+                            <div class="card-body">
+                                <p><strong>Series ID:</strong> <?php echo $row['sid']; ?></p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="update_series.php?id=<?php echo $row['sid']; ?>" class="btn btn-warning btn-sm">Update</a>
+                                <a href="delete_series.php?id=<?php echo $row['sid']; ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this series?');">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php
+                }
+            } else {
+                echo "<div class='col-12'><p class='text-center'>No series found</p></div>";
+            }
+            ?>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a href="adminIndex.php" class="btn btn-secondary">Go to Admin Panel</a>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
